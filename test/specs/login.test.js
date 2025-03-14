@@ -1,4 +1,4 @@
-const { expect, browser, $ } = require('@wdio/globals');
+const { expect } = require('@wdio/globals');
 const LoginPage = require('../pageobjects/login.page');
 const { clearInputField } = require('../utils/helpers');
 const { validUser, anyCredentials, currentBrowser } = require('../utils/get-data');
@@ -81,7 +81,7 @@ describe('Login Tests', () => {
         if (result === 'failed') {
             console.error(`FAILED: ${this.currentTest.title} in ${currentBrowser}`);
             console.error(`ERROR: ${this.currentTest.err}`);
-            console.error(`User Credentials: ${JSON.stringify(anyCredentials)}`);
+            console.error(`Last Used Credentials: ${JSON.stringify(this.currentTest.ctx.user)}`);
         } else {
             console.log(`PASSED: ${this.currentTest.title} in ${currentBrowser}`);
         }
