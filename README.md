@@ -17,21 +17,21 @@ This project is an automated test suite for the Swag Labs login functionality us
 
 ## Test Scenarios (UCs)
 ### **UC-1: Test Login Form with Empty Credentials**
-1. Leave the "Username" and "Password" fields empty.
-2. Click the "Login" button.
-3. Verify that the error message **"Username is required"** appears.
+1. Enter any credentials.
+2. Clear both the input fields.
+3. Click the "Login" button.
+4. Verify that the error message **"Username is required"** appears.
 
 ### **UC-2: Test Login Form with Missing Password**
-1. Enter a valid username.
-2. Leave the "Password" field empty.
+1. Enter any credentials.
+2. Clear the "Password" field.
 3. Click the "Login" button.
 4. Verify that the error message **"Password is required"** appears.
 
 ### **UC-3: Test Login Form with Valid Credentials**
-1. Enter a username that includes accented characters.
-2. Enter a valid password.
+1. Enter valid credentials.
 3. Click the "Login" button.
-4. Verify that the dashboard title is **"Swag Labs"**.
+4. Verify that the dashboard title is **"Swag Labs"** after login.
 
 ## Project Setup and Execution
 ### **Installation**
