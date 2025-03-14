@@ -37,7 +37,7 @@ This project is an automated test suite for the Swag Labs login functionality us
 ### **Installation**
 1. Clone this repository:
    ```sh
-   git clone <repository-url>
+   git clone https://github.com/FoxAllUp/Final_Task-Swag_Labs_test.git
    cd Final_Task-Swag_Labs_test
    ```
 2. Install dependencies:
